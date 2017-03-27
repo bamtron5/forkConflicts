@@ -3,9 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style>
+      .warn{
+        color:red;
+      }
+
+      .primary{
+        color: #4078c0;
+      }
+
+      .action{
+        color: rgba(255, 101, 29, 1);
+      }
+    </style>
   </head>
   <body>
     <ul id="myList"></ul>
+
+    <div id="myId">
+      Hello World
+    </div>
+
     <script>
       var myCommits = [
         'ae2039f',
@@ -21,6 +39,9 @@
       myCommits.forEach((v) => {
         myList.innerHTML += '<li>' + v + '</li>';
       });
+
+      var myId = document.getElementById("myId");
+      myId.className += "warn";
     </script>
   </body>
 </html>
