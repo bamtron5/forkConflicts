@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul id="myList"></ul>
+    <script>
+      var myCommits = [
+        'ae2039f',
+        'b29309i',
+        '2093j2f'
+      ];
+      var myList = document.getElementById("myList");
+
+
+      myCommits.forEach((v) => {
+        myList.innerHTML += '<li>' + v + '</li>';
+      });
+    </script>
+  </body>
+</html>
+
