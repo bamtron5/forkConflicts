@@ -23,6 +23,13 @@
     <div id="myId">
       Hello World
     </div>
+    <div id="cool">
+      My  first Code
+    </div>
+
+    <div id="jupiter">
+      Jupiter
+    </div>
 
     <div id="yourId">
       my id is seattle206
@@ -38,14 +45,18 @@
         'fandango'
       ];
       var myList = document.getElementById("myList");
-
+      
+      var jupiter = document.getElementById("jupiter");
+      jupiter.className += 'warn';
 
       myCommits.forEach((v) => {
         myList.innerHTML += '<li>' + v + '</li>';
       });
       var myId = document.getElementById("yourId");
       var myId = document.getElementById("myId");
-      myId.className += "warn";
+
+      var cool = document.getElementById("cool");
+      cool.className += "warn";
     </script>
   </body>
 </html>
