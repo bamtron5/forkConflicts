@@ -24,6 +24,10 @@
       Hello World
     </div>
 
+    <div id="yourId">
+      my id is seattle206
+    </div>
+
     <script>
       var myCommits = [
         'ae2039f',
@@ -39,7 +43,7 @@
       myCommits.forEach((v) => {
         myList.innerHTML += '<li>' + v + '</li>';
       });
-
+      var myId = document.getElementById("yourId");
       var myId = document.getElementById("myId");
       myId.className += "warn";
     </script>
