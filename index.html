@@ -8,6 +8,10 @@
         color:red;
       }
 
+      .green{
+        color: green;
+      }
+
       .primary{
         color: #4078c0;
       }
@@ -15,6 +19,7 @@
       .action{
         color: rgba(255, 101, 29, 1);
       }
+
     </style>
   </head>
   <body>
@@ -45,14 +50,15 @@
         'fandango'
       ];
       var myList = document.getElementById("myList");
-      
+
       var jupiter = document.getElementById("jupiter");
       jupiter.className += 'warn';
 
       myCommits.forEach((v) => {
         myList.innerHTML += '<li>' + v + '</li>';
       });
-      var myId = document.getElementById("yourId");
+      var yourId = document.getElementById("yourId");
+      yourId.className += "green";
       var myId = document.getElementById("myId");
 
       var cool = document.getElementById("cool");
