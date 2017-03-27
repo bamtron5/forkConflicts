@@ -17,7 +17,7 @@
       }
 
       .action{
-        color: rgba(255, 101, 29, 1);
+        color: rgba(255, 101, 29, .5);
       }
 
     </style>
@@ -40,6 +40,10 @@
       my id is seattle206
     </div>
 
+    <h1>GAMES</h1>
+    <div id="games"></div>
+
+
     <script>
       var myCommits = [
         'ae2039f',
@@ -60,6 +64,26 @@
       var yourId = document.getElementById("yourId");
       yourId.className += "green";
       var myId = document.getElementById("myId");
+      myId.className += "warn";
+
+      var yourId = document.getElementById("yourId");
+      yourId.className += "action";
+
+      var data = [];
+
+      // HOMEWORK ... create a new games
+      // Avoid conflicts by pulling from the source and creating PRs
+      data.push({
+        name: 'Metroid',
+        release: 1986,
+        platform: 'nes',
+        bit: 8
+      });
+
+      var keys = Object.keys(data[0]);
+      data.forEach((game, i) =>
+        keys.forEach((key) =>
+        document.getElementById('games').append(data[i][key] + '\n')));
 
       var cool = document.getElementById("cool");
       cool.className += "warn";
