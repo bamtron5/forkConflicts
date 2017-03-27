@@ -24,7 +24,7 @@
       Hello World
     </div>
 
-    <div id="planet">
+    <div id="jupiter">
       Jupiter
     </div>
 
@@ -38,7 +38,9 @@
         'fandango'
       ];
       var myList = document.getElementById("myList");
+      
       var jupiter = document.getElementById("jupiter");
+      jupiter.className += 'warn';
 
       myCommits.forEach((v) => {
         myList.innerHTML += '<li>' + v + '</li>';
