@@ -8,6 +8,10 @@
         color:red;
       }
 
+      .green{
+        color: green;
+      }
+
       .primary{
         color: #4078c0;
       }
@@ -15,6 +19,7 @@
       .action{
         color: rgba(255, 101, 29, .5);
       }
+
     </style>
   </head>
   <body>
@@ -32,11 +37,12 @@
     </div>
 
     <div id="yourId">
-      Hello World 5
+      my id is seattle206
     </div>
 
     <h1>GAMES</h1>
     <div id="games"></div>
+
 
     <script>
       var myCommits = [
@@ -56,7 +62,8 @@
       myCommits.forEach((v) => {
         myList.innerHTML += '<li>' + v + '</li>';
       });
-
+      var yourId = document.getElementById("yourId");
+      yourId.className += "green";
       var myId = document.getElementById("myId");
       myId.className += "warn";
 
@@ -68,11 +75,12 @@
       // HOMEWORK ... create a new games
       // Avoid conflicts by pulling from the source and creating PRs
       data.push({
-        name: 'Metroid',
+        name: 'Metroid Revenge of the Sith',
         release: 1986,
         platform: 'nes',
         bit: 8
       });
+
 
        data.push({
         name: 'astroid',
@@ -80,6 +88,25 @@
         platform: 'master',
         bit: 7
       });
+
+
+      data.push({
+        name: 'Metroid Hunters',
+        release: 2005,
+        platform: 'DS',
+        bit: 16
+      });
+
+
+      data.push({
+        name: 'Halo Combat Evolved',
+        release: 2001,
+        platform: 'xbox',
+        gig: 4
+
+      });
+
+      
 
       var keys = Object.keys(data[0]);
       data.forEach((game, i) =>
