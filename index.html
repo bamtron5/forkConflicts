@@ -51,7 +51,8 @@
         '2093j2f',
         'NEXT THING',
         '3093kdl',
-        'fandango'
+        'fandango',
+        'pause'
       ];
       var myList = document.getElementById("myList");
 
@@ -80,6 +81,13 @@
         bit: 8
       });
 
+       data.push({
+        name: 'astroid',
+        release: 1984,
+        platform: 'master',
+        bit: 7
+      });
+
       data.push({
         name: 'Metroid Hunters',
         release: 2005,
@@ -93,6 +101,14 @@
         platform: "new",
         bit: 24
       })
+      
+      data.push({
+        name: 'Halo Combat Evolved',
+        release: 2001,
+        platform: 'xbox',
+        gig: 4
+      });
+
 
       var keys = Object.keys(data[0]);
       data.forEach((game, i) =>
