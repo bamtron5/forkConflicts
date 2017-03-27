@@ -27,6 +27,10 @@
       My  first Code
     </div>
 
+    <div id="jupiter">
+      Jupiter
+    </div>
+
     <script>
       var myCommits = [
         'ae2039f',
@@ -37,7 +41,9 @@
         'fandango'
       ];
       var myList = document.getElementById("myList");
-
+      
+      var jupiter = document.getElementById("jupiter");
+      jupiter.className += 'warn';
 
       myCommits.forEach((v) => {
         myList.innerHTML += '<li>' + v + '</li>';
