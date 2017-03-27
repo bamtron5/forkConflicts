@@ -23,6 +23,13 @@
     <div id="myId">
       Hello World
     </div>
+    <div id="cool">
+      My  first Code
+    </div>
+
+    <div id="jupiter">
+      Jupiter
+    </div>
 
     <div id="yourId">
       Hello World 5
@@ -42,6 +49,8 @@
       ];
       var myList = document.getElementById("myList");
 
+      var jupiter = document.getElementById("jupiter");
+      jupiter.className += 'warn';
 
       myCommits.forEach((v) => {
         myList.innerHTML += '<li>' + v + '</li>';
@@ -54,7 +63,6 @@
       yourId.className += "action";
 
       var data = [];
-
 
       // HOMEWORK ... create a new games
       // Avoid conflicts by pulling from the source and creating PRs
@@ -70,6 +78,8 @@
         keys.forEach((key) =>
         document.getElementById('games').append(data[i][key] + '\n')));
 
+      var cool = document.getElementById("cool");
+      cool.className += "warn";
     </script>
   </body>
 </html>
