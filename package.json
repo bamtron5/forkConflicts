@@ -1,0 +1,25 @@
+{
+  "name": "fork-conflicts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel scripts/*.es6.js --out-file build/es5build.js",
+    "watch": "babel scripts/*.es6.js --out-file build/es5build.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bamtron5/forkConflicts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bamtron5/forkConflicts/issues"
+  },
+  "homepage": "https://github.com/bamtron5/forkConflicts#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-env": "^1.2.2",
+    "babel-preset-es2015": "^6.24.0"
+  }
+}
